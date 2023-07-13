@@ -1,0 +1,8 @@
+node_modules/
+cypress/plugins
+cypress/support
+cypress/screenshots
+cypress/videos
+
+# macOS
+.DS_Store

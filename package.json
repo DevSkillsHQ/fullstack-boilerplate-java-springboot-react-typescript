@@ -1,0 +1,16 @@
+{
+  "name": "fullstack-boilerplate-ruby-vue",
+  "version": "1.0.0",
+  "scripts": {
+    "build:backend": "cd app-backend && ./gradlew build",
+    "build:frontend": "cd app-frontend && npm install && npm run build",
+    "build": "npm run build:backend && npm run build:frontend",
+    "start:backend": "java -jar app-backend/build/libs/spring-boot-boilerplate-0.0.1-SNAPSHOT-plain.jar",
+    "start:frontend": "cd app-frontend &&  npm run start",
+    "start": "npm run start:backend & npm run start:frontend",
+    "test": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^9.7.0"
+  }
+}
