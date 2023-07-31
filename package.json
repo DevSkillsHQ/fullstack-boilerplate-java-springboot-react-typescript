@@ -1,5 +1,5 @@
 {
-  "name": "fullstack-boilerplate-ruby-vue",
+  "name": "fullstack-boilerplate-spring-react",
   "version": "1.0.0",
   "scripts": {
     "build:backend": "cd app-backend && ./gradlew build",
