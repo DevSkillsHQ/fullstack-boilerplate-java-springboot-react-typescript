@@ -19,7 +19,7 @@ A backbone for your coding challenge.
 
 ### Frontend
 
-- React 18
+- React
 - Typescript
 - Vite
 
