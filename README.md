@@ -12,10 +12,10 @@ A backbone for your coding challenge.
 
 ### Backend
 
-- Java 17
+- Java 21
 - Spring Boot 2
 - SQLite 3
-- Gradle 7
+- Gradle 8.6
 
 ### Frontend
 
