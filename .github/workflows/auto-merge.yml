@@ -13,7 +13,7 @@ jobs:
   # Verifies the boilerplate can start and run in GitHub Actions environment
   test-for-workflow:
     name: Alva test workflow
-    uses: DevSkillsHQ/publish-test-results-workflow/.github/workflows/publish-test-results.yml@main
+    uses: DevSkillsHQ/publish-test-results-workflow/.github/workflows/publish-test-results.yml@upgrade-actions
   
   # Verifies the boilerplate can start and run in codespace environment
   test-for-codespaces:
