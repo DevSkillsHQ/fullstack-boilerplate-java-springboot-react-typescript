@@ -19,7 +19,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.xerial:sqlite-jdbc:3.48.0.0'
+	implementation 'org.xerial:sqlite-jdbc:3.49.0.0'
 	implementation 'org.hibernate:hibernate-core:6.6.6.Final'
 	implementation 'org.hibernate.orm:hibernate-community-dialects'
 
