@@ -62,7 +62,7 @@ jobs:
     needs:
       - test-for-workflow
       - test-for-codespaces
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     if: github.actor == 'dependabot[bot]'
     steps:
       - name: Dependabot metadata
