@@ -20,7 +20,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.xerial:sqlite-jdbc:3.51.1.0'
-	implementation 'org.hibernate:hibernate-core:7.1.10.Final'
+	implementation 'org.hibernate:hibernate-core:7.1.11.Final'
 	implementation 'org.hibernate.orm:hibernate-community-dialects'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
