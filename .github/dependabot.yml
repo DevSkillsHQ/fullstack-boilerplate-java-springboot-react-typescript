@@ -1,17 +1,48 @@
+# Grouped, weekly updates (QOHP-1356). Majors of packages that only work together arrive
+# as one PR per family; every minor and patch update of a directory arrives as one PR.
 version: 2
 updates:
   - package-ecosystem: "gradle"
     directory: "/app-backend"
     schedule:
-      interval: "daily"
-    labels:
-      - "gradle"
-      - "dependencies"
-
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    groups:
+      spring-boot:
+        patterns:
+          - "org.springframework.boot*"
+          - "io.spring.dependency-management*"
+          - "gradle-wrapper"
+        update-types:
+          - "major"
+      minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
   - package-ecosystem: "npm"
     directory: "/app-frontend"
     schedule:
-      interval: "daily"
-    labels:
-      - "npm"
-      - "dependencies"
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    groups:
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
+          - "react-test-renderer"
+        update-types:
+          - "major"
+      vite:
+        patterns:
+          - "vite"
+          - "@vitejs/*"
+          - "vitest"
+          - "@vitest/*"
+        update-types:
+          - "major"
+      minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
